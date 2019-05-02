@@ -1,0 +1,296 @@
+﻿/* + Ð¤Ð¾Ñ€Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð° ÑÐ°Ð¹Ñ‚Ð° */
+#formOrder{
+	width: 100%;
+	height:100%;
+	background: transparent;
+	display: block;
+	position: fixed;
+	top: -200%;
+	z-index: 10;
+	display: flex;
+	flex-direction:column;
+	transition: .5s;
+}
+#formOrder .backgroundOrder{
+	background:transparent;
+	height: 100%;
+}
+#formOrder:target{
+	top:0;
+}
+#formOrder:target .backgroundOrder{
+	animation:foGray .5s linear .5s ;
+	animation-fill-mode:forwards;
+}
+@keyframes foGray{
+	from{background:transparent;}
+	to{background: rgba(153,153,153,0.4);}
+}
+#formOrder .close{
+	position: absolute;
+	right:0;
+	top:40px;
+}
+#formOrder .order_wrap{
+	background: #fff;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+#formOrder .order_block{
+	width: 960px;
+	margin: 0 auto;
+	padding:40px 0;
+	position: relative;
+	display: block;
+}
+#formOrder .order_block.thanks{
+	background: #fff;
+	display: none;
+	height: 366px;
+}
+#formOrder .order_block.thanks .thanks-center{
+	display: block;
+	position: absolute;
+	left: 0;
+	top:50%;
+	transform: translate(0,-50%);
+	text-align: center;
+	width: 100%;
+}
+
+#formOrder .order_block.thanks .thanks-center sup{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#formOrder .order_block.thanks .thanks-center p{
+	margin-top:10px;
+	font-weight: 24px;
+}
+
+#formOrder .order_block.thanks .thanks-center a{
+	display: inline-block;
+	margin-top:15px;
+	font-size: 14px;
+	font-weight: bold;
+	color:#35a5de;
+	text-decoration: none;
+	border-bottom:1px dotted #35a5de;
+}
+
+#formOrder .order_block sup{
+	font-size: 20px;
+	font-weight: bold;
+}
+#formOrder .order_form{
+	width: 590px;
+	float: left;
+}
+#formOrder .slog{
+	margin:2px 0 35px 0;
+}
+#formOrder .pole{
+	width: 270px;
+}
+#formOrder .order_form label{
+	font-size: 12px;
+	margin: 4px 0;
+	display: block;
+}
+#formOrder .order_form input[type="text"]{
+	width: 258px;
+	height: 38px;
+	border: 1px solid #d8d8d8;
+	padding: 0 5px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+#formOrder .order_form textarea{
+	width: 258px;
+	border: 1px solid #d8d8d8;
+	padding: 5px;
+	resize:none;
+	height: 110px;
+	margin-bottom: 20px;
+}
+#formOrder .order_form input[type="submit"]{
+	width: 270px;
+	border: 0;
+	height: 40px;
+	background: #34a5dd;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .3s;
+	border-radius: 5px;
+}
+#formOrder .order_form input[type="submit"]:hover{
+	background:#388cb7;
+}
+#formOrder .captcha{
+	width: 264px;
+	height: 34px;
+	border: 1px solid #d8d8d8;
+	padding: 2px;
+	font-size: 12px;
+	cursor: pointer;
+}
+#formOrder .captcha_sub{
+	display: block;
+	margin:0 auto;
+	width:204px;
+	margin-left: 17px;
+	margin-top:7px;
+	height: 25px;
+	background: transparent;
+}
+#formOrder .captcha_sub .noUi-handle:after,#formOrder .captcha_sub .noUi-handle:before{
+	display: none;
+}
+#formOrder .noUi-target{
+	border:0;
+	box-shadow: initial;
+	border-radius: 0;
+}
+#formOrder .captcha_sub .noUi-handle{
+	width: 59px;
+	height: 33px;
+	background:transparent url('../images/material/captcha.png') no-repeat 0 0;
+	box-shadow: initial;
+	border:0;
+	border-radius: 0;
+}
+
+#formOrder .captcha_sub.success .noUi-handle{
+	background-position: -59px 0;
+}
+
+#formOrder .line_form{
+	width: 1px;
+	background: #d8d8d8;
+	height: 289px;
+	margin: 0 28px;
+	float: left;
+}
+
+#formOrder .text_form{
+	width: 310px;
+	float: left;
+}
+#formOrder .text_form p{
+	font-size: 12px;
+	line-height: 1.5em;
+}
+#formOrder .text_form a.cont{
+	text-decoration: none;
+	color:#2e2e2e;
+	font-size: 12px;
+	margin:10px 0;
+}
+#formOrder .b_dot{
+	border-bottom: 1px dotted #2e2e2e;
+}
+#formOrder .delFile{
+	display: inline-block;
+	text-align: center;
+	width: 180px;
+	font-size: 12px;
+	border: 0;
+	background: #ff6766;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	height:30px;
+	line-height: 30px;
+	text-decoration: none;
+	transition: .3s;
+}
+#formOrder #fileOrder{
+	display: none;
+}
+#formOrder .delFile:hover{
+	background:red;
+}
+#formOrder .icoOrder{
+	margin-right: 10px;
+}
+.icoOrder{
+	display: inline-block;
+	width:32px;
+	height:32px;
+	background: transparent url('../images/material/formControl.png') no-repeat 0 0;
+}
+.icoOrder.ico_brif{
+	background-position: 0 0;
+}
+.icoOrder.ico_file{
+	background-position: -32px 0;
+}
+
+.order_block.main .privacy-policy-info {
+	margin-top: 30px;
+}
+
+/* - Ð¤Ð¾Ñ€Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð° ÑÐ°Ð¹Ñ‚Ð° */
+
+
+
+
+/* Модальное окно - если возникла ошибка при отправке */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.blur-it { filter: blur(12px); }
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background: rgba(53, 165, 222, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  width: 400px;
+  height: 200px;
+  display: block;
+  left: calc((100vw - 400px)/2);
+  top: calc((100vh - 200px)/2);
+  position: absolute;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.modal-wrapper.open .modal { opacity: 1; }
+.head { 
+  width: 85%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+}
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+.good-job {
+  text-align: center;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #e2525c;
+}
+.good-job .fa-exclamation-triangle {
+  margin-top: 10px;
+  font-size: 60px;
+}
+.good-job h1 {
+  margin-top: 10px;
+  font-size: 16px;
+  color:#888;
+}

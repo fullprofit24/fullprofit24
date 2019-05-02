@@ -1,0 +1,95 @@
+/* + Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñ‹ Ð½Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ */
+.slider_clients_block{
+	width: 960px;
+	height: 175px;
+	position: relative;
+	margin: 30px 0 0 0;
+}
+.nav_slider_clients{
+	width: 79px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top:-60px;
+}
+.nav_slider_clients .btn_slider_cl{
+	width: 38px;
+	height: 38px;
+	border:1px solid #d8d8d8;
+	display: block;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top:2px;
+	transition:.3s;
+}
+.nav_slider_clients .next{
+	border-right:none;
+	transform: rotate(180deg);
+}
+.nav_slider_clients .btn_slider_cl:hover{
+	background-color: #d8d8d8;
+}
+.nav_slider_clients .btn_slider_cl:hover .icoCont{
+	background-position: 0 0;
+}
+.slider_clients{
+	overflow: hidden;
+	height: 175px;
+	width: 984px;
+}
+.slide_client{
+	width: 220px;
+	height: 165px;
+	float: left;
+	margin-left: 26px;
+}
+.slide_client:first-child{
+	margin-left: 0;
+}
+.link_client{
+	display: block;
+	color: #2e2e2e;
+	text-decoration: none;
+	transition: .3s;
+}
+.link_client:hover{
+	background-color: #eee;
+}
+.lid_client{
+	height: 79px;
+	display: block;
+	font-size: 12px;
+	line-height: 1.5em;
+	padding: 0 5px;
+	text-align: center;
+}
+.img_client{
+	width: 220px;
+	height: 96px;
+	margin-bottom: 5px;
+}
+.set_clients{
+	display: block;
+	transition:.3s;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: url(/images/material/grayscale.svg);
+	filter: grayscale(100%);
+	filter: gray;
+	/*filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); 
+	 filter: gray; 
+	 -webkit-filter: grayscale(100%); */
+}
+.link_client:hover .set_clients{
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: none;
+	/*filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+	 -webkit-filter: grayscale(0%);*/
+}
+/* - Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñ‹ Ð½Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ */

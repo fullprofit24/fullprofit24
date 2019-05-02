@@ -1,0 +1,32 @@
+.flex{display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.iflex{display: -webkit-inline-flex;display: -ms-inline-flexbox;display: inline-flex;}
+
+/*ÐÐ°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð»ÐµÐºÑÐ° */
+.flex-dir-row{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}/*Ð“Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚, ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸Ðµ*/
+.flex-dir-column{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}/*Ð’ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»*/
+
+/*ÐžÐ´Ð½Ð¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ð¾ÑÑ‚ÑŒ*/
+.flex-wrap-nowrap{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}/*ÐžÐ´Ð½Ð° ÑÑ‚Ñ€Ð¾ÐºÐ°, ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸Ðµ*/
+.flex-wrap-wrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*ÐœÐ½Ð¾Ð³Ð¾ ÑÑ‚Ñ€Ð¾Ðº*/
+
+/*Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ Ð¾ÑÐ¸*/
+.flex-just-start{-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;}/*Ðš Ð½Ð°Ñ‡Ð°Ð»Ñƒ ÑÑ‚Ñ€Ð¾ÐºÐ¸, ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸Ðµ*/
+.flex-just-end{-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;}/*Ðš ÐºÐ¾Ð½Ñ†Ñƒ ÑÑ‚Ñ€Ð¾ÐºÐ¸*/
+.flex-just-center{-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}/*Ð¡Ñ‚ÑÐ½ÑƒÑ‚ÑŒ Ðº Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ*/
+.flex-just-between{-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}/*Ð”Ð²Ð° Ð¿Ð¾ ÐºÑ€Ð°ÑÐ¼ Ð¸ Ð·Ð°Ð¼Ð¾ÑÑ‚Ð¸Ñ‚ÑŒ*/
+.flex-just-around{-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;}/*Ð Ð°Ð²Ð½Ð¾Ð¼ÐµÑ€Ð½Ð¾ Ð²ÑÐµÐ¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼*/
+
+/*Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð¿Ð¾Ð¿ÐµÑ€ÐµÑ‡Ð½Ð¾Ð¹ Ð¾ÑÐ¸ Ð½Ð° Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¹ ÑÑ‚Ñ€Ð¾ÐºÐµ*/
+.flex-align-start{-webkit-align-items: flex-start;-ms-flex-align: start;align-items: flex-start}/*ÐŸÐ¾ Ð½Ð°Ñ‡Ð°Ð»Ñƒ ÑÑ‚Ñ€Ð¾ÐºÐ¸*/
+.flex-align-end{-webkit-align-items: flex-end;-ms-flex-align: end;align-items: flex-end}/*ÐŸÐ¾ ÐºÐ¾Ð½Ñ†Ñƒ ÑÑ‚Ñ€Ð¾ÐºÐ¸*/
+.flex-align-center{-webkit-align-items: center;-ms-flex-align: center;align-items: center}/*Ð¦ÐµÐ½Ñ‚Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ*/
+.flex-align-baseline{-webkit-align-items: baseline;-ms-flex-align: baseline;align-items: baseline}/*Ð‘Ð°Ð·Ð¾Ð²Ð°Ñ Ð»Ð¸Ð½Ð¸Ñ*/
+.flex-align-stretch{-webkit-align-items: stretch;-ms-flex-align: stretch;align-items: stretch}/*Ð Ð°ÑÑ‚ÑÐ½ÑƒÑ‚ÑŒ, ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸Ðµ*/
+
+/*Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð¿Ð¾Ð¿ÐµÑ€ÐµÑ‡Ð½Ð¾Ð¹ Ð¾ÑÐ¸ Ð½Ð° Ð²ÑÐµÑ… ÑÑ‚Ñ€Ð¾ÐºÐ°Ñ…*/
+.flex-valign-start{-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start;}/*ÐÐ°Ñ‡Ð°Ð»Ð¾ ÑÑ‚Ñ€Ð¾ÐºÐ¸*/
+.flex-valign-end{-webkit-align-content:flex-end;-ms-flex-line-pack:end;align-content:flex-end;}/*ÐšÐ¾Ð½ÐµÑ† ÑÑ‚Ñ€Ð¾ÐºÐ¸*/
+.flex-valign-center{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}/*Ð¦ÐµÐ½Ñ‚Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ*/
+.flex-valign-between{-webkit-align-content:space-between;-ms-flex-line-pack:justify;align-content:space-between;}/*Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ Ð¿Ð¾ ÐºÑ€Ð°ÑÐ¼ Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ñ€Ð°Ð·Ð¼Ð°Ð·Ð°Ñ‚ÑŒ*/
+.flex-valign-around{-webkit-align-content:space-around;-ms-flex-line-pack:distribute;align-content:space-around;}/*Ð Ð°Ð²Ð½Ð¾Ð¼ÐµÑ€Ð½Ð¾ Ð¼ÐµÐ¶Ð´Ñƒ Ð²ÑÐµÐ¼Ð¸*/
+.flex-valign-stretch{-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;}/*Ð Ð°ÑÑ‚ÑÐ½ÑƒÑ‚ÑŒ Ð¿Ð¾ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ñƒ*/

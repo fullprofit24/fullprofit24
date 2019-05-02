@@ -1,0 +1,44 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 692.5 692.5">
+	<defs>
+		<style>
+			.animp{
+				-webkit-animation:load_star 2.4s infinite linear;
+				        animation:load_star 2.4s infinite linear;
+			}
+			@-webkit-keyframes load_star{
+				from{opacity:0;}
+				50%{opacity:1;}
+				to{opacity:0;}
+			}
+
+			@keyframes load_star{
+				from{opacity:0;}
+				50%{opacity:1;}
+				to{opacity:0;}
+			}
+
+			.animp6{-webkit-animation-delay:-0.4s!important;animation-delay:-0.4s!important;}
+			.animp5{-webkit-animation-delay:-0.8s!important;animation-delay:-0.8s!important;}
+			.animp4{-webkit-animation-delay:-1.2s!important;animation-delay:-1.2s!important;}
+			.animp3{-webkit-animation-delay:-1.6s!important;animation-delay:-1.6s!important;}
+			.animp2{-webkit-animation-delay:-2.0s!important;animation-delay:-2.0s!important;}
+			.animp1{-webkit-animation-delay:-2.4s!important;animation-delay:-2.4s!important;}
+		</style>
+	</defs>
+    <g transform="matrix(1.25,0,0,-1.25,-97.499646,763.13288)">
+        <g transform="translate(442,201.0635)">
+            <path class="mainanimp" fill-rule="evenodd" fill="#51a7e1" d="m0,0,0,46.514c21.651,22.171,35,52.485,35,85.923,0,33.967-13.776,64.709-36.038,86.966l-85.962-119.97-87.96,119.96c-22.26-22.25-36.04-53-36.04-86.96,0-34.456,14.173-65.596,37-87.926v-45.827c-43.917,28.295-73,77.626-73,133.75,0,59.058,32.2,110.59,80,138.01v-0.01l21.337-29.34c-0.022-0.012-0.044-0.025-0.066-0.037l58.73-80.62,57,80,0.993-0.067c-0.315,0.173-0.625,0.356-0.942,0.526l20.949,29.54-0.005,0.01c47.803-27.41,80.005-78.95,80.005-138.01,0-55.272-28.205-103.95-71-132.44" /> </g>
+        <g transform="translate(475.7549,455.6133)">
+            <path class="animp animp1" fill-rule="evenodd" fill="#42454c" d="m0,0c-21.531,21.325-47.98,36.293-76.427,44.125l-12.986,61.455-30.101,13.741,0.07,35.572c94.622-1.02,186.13-50.03,237.07-137.22l-31.174-18.178-24.784,20.382-61.672-19.873z" /> </g>
+        <g transform="translate(521.8115,289.4404)">
+            <path class="animp animp2" fill-rule="evenodd" fill="#42454c" d="m0,0c7.708,29.324,7.474,59.727,0.079,88.289l46.638,42.002-3.112,32.952,30.772,17.738c46.223-82.487,49.443-186.28-0.546-274.04l-31.229,17.913,5.273,31.668-47.875,43.482z" /> </g>
+        <g transform="translate(399.4658,166.9014)">
+            <path class="animp animp3" fill-rule="evenodd" fill="#51a7e1" d="m0,0c29.26,8.036,55.439,23.471,76.404,44.168l59.911-19.231,26.928,19.197,30.903-17.688c-47.98-81.25-136.13-136.04-237.31-136.84l-0.297,35.946,30.057,11.314,13.402,63.13z" /> </g>
+        <g transform="translate(234.0146,211.4775)">
+            <path class="animp animp4" fill-rule="evenodd" fill="#51a7e1" d="m0,0c21.5-21.321,47.91-36.286,76.314-44.115l12.968-61.442,30.056-13.738-0.069-35.563c-94.487,1.025-185.86,50.016-236.73,137.19l31.132,18.178,24.746-20.376,61.582,19.868z" /> </g>
+        <g transform="translate(188.0264,377.6118)">
+            <path class="animp animp5" fill-rule="evenodd" fill="#51a7e1" d="m0,0c-7.696-29.317-7.463-59.713-0.079-88.268l-46.569-41.992,3.106-32.946-30.726-17.734c-46.154,82.469-49.366,186.24,0.546,273.98l31.182-17.906-5.265-31.661,47.805-43.473z" /> </g>
+        <g transform="translate(310.1919,500.124)">
+            <path class="animp animp6" fill-rule="evenodd" fill="#51a7e1" d="m0,0c-29.217-8.034-55.357-23.466-76.292-44.159l-59.823,19.228-26.888-19.194-30.857,17.684c47.903,81.232,135.93,136,236.96,136.81l0.306-35.939-30.014-11.311-13.382-63.12z" /> </g>
+    </g>
+</svg>

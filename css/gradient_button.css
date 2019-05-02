@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic);
+
+.btn-liquid {
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 48px;
+	margin: 0 auto;
+	border-radius: 27px;
+	color: #ffffffe0;
+	font: 700 13px/50px "Droid Sans", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+.btn-liquid .inner {
+	position: relative;
+	z-index: 2;
+}
+.btn-liquid canvas {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	bottom: -50px;
+	left: -50px;
+	margin: 0 auto;
+	z-index: 1;
+}
+@media only screen and (max-width: 1380px){
+	.btn-liquid {
+		opacity: 0;
+		z-index: -100;
+	}
+}
+
+
+.btn-liquid-steps {
+	display: block;
+	position: absolute;
+	width: 160px;
+	height: 54px;
+	right:calc(50px + (80px - 160px)/2);
+	top:calc(0.05045*(100vh - 102px) + 2px + (160px + 2px - 54px)/2);
+	transform:rotate3d(0,0,1,90deg);
+	border: none;
+	color: #ffffffe0;
+	text-decoration: none;
+}
+.btn-liquid-steps .inner {
+	position: relative;
+	z-index: 2;
+}
+.btn-liquid-steps canvas {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	bottom: -50px;
+	left: -50px;
+	z-index: 1;
+}
+.btn-liquid-steps .inner .inf-steps {
+	opacity:0.75;
+	margin-top:6px;
+	margin-left:5px;
+}
+.btn-liquid-steps .inner .inf-steps48 { opacity:0.0; }
+.btn-liquid-steps .inner:hover .inf-steps { opacity:0.9; }
+
+
+/** Code for hover info **/
+
+dfn {
+  padding: 0 0;
+  cursor: pointer;
+  font-style: normal;
+  position: absolute;
+  opacity:0.85;
+  
+}
+dfn::after {
+	border-radius:5px;
+	content: attr(data-info);
+	display: inline;
+	position: absolute;
+	top: 16px; left: -150px;
+	opacity: 0;
+	width: 110px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.5em;
+	padding: 0.5em 0.8em;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	pointer-events: none; /* This prevents the box from apearing when hovered. */
+	transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 16px; left: -19px;
+	opacity: 0;
+	width: 0; height: 0;
+	border: solid transparent 6px;
+	border-left-color: rgba(0,0,0,0.8);
+	transition: opacity 250ms, top 250ms;
+}
+dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {opacity: 1;}
+dfn:hover::after {top: 9px;}
+dfn:hover::before {top: 19px;}
+
+
+.steps-info {
+	position: absolute;
+	top:calc(0.05045*(100vh - 102px) + 2px);
+	right:65px;
+	width:50px;
+	height:50px;
+	background-color: transparent;
+	z-index:10;
+}
+
+
+@media only screen and (min-width: 1500px) {
+	.btn-liquid {
+		width: 240px;
+		height: 60px;
+		font: 700 14px/60px "Droid Sans", sans-serif;
+	}
+	.btn-liquid-steps {
+		width: 240px;
+		height: 60px;
+		right:calc(50px + (80px - 240px)/2);
+		top:calc(0.05045*(100vh - 102px) + 2px + (240px + 2px - 60px)/2);
+	}
+	.btn-liquid-steps .inner .inf-steps { display: none; }
+	.btn-liquid-steps .inner .inf-steps48 {
+		opacity:0.75;
+		margin-top:6px;
+		margin-left:6px;
+	}
+	.btn-liquid-steps .inner:hover .inf-steps48 { opacity:0.9; }
+	.steps-info { top:calc(0.05045*(100vh - 102px) + 8px); }
+}
+
+
+.header-steps {
+	position:absolute;
+	top:calc(0.05045*(100vh - 102px) - 18px);
+	left: 30px;
+	color:#fff;
+}
+
+.open-sans{font-family: 'globerbook';}
+.tera {
+  font-size: 5.1rem; /* 117 / 18 = 6.5 */
+  margin-bottom: 0.25385rem;
+}
+.bold{font-weight: 1000;}
+
+.gamma {
+  font-size: 2rem; /* 36 / 18 = 2 */
+  margin-bottom: 0.825rem;
+  line-height: 32px;
+}
+.lato{font-family: 'globerbook'}
+.thin{font-weight: 100;}
+.uppercase{text-transform: uppercase;}
+
+.ls-xlarge{letter-spacing: 12px;}
+.ms-xlarge{letter-spacing: 5px;}

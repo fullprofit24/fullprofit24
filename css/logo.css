@@ -1,0 +1,51 @@
+@-webkit-keyframes animationgradienttitle {
+  0% { background-position: 0 512px; }
+  100% { background-position: 512px 0; }
+}
+@keyframes animationgradienttitle {
+  0% { background-position: 0 512px; }
+  100% { background-position: 512px 0; }
+}
+body { background-color: #ffffff; }
+h1 { margin: 0; }
+
+
+.c-article {
+  margin-top: 6px;
+  margin-left: 37px;
+}
+.c-article__header { position: absolute; }
+.c-article__title {
+  font-family: 'Scope One', serif;
+  font-size: 3em;
+  color: #fc3735;
+  background: -webkit-linear-gradient(left, #F57170, #10DDC2, #F57170);
+  background-size: 512px 24px;
+  background-position: 0 512px;
+  -webkit-will-change: background-position;
+	  will-change: background-position;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: animationgradienttitle;
+          animation-name: animationgradienttitle;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+
+@font-face {
+	font-family: prime; /* Гарнитура шрифта */
+	src: url(Prime.otf); /* Путь к файлу со шрифтом */
+}
+.u-font-lora {
+	color:#A1A8C9;
+	font-size: 48pt;
+	font-family: "prime";
+	line-height: 0px;
+	padding-top:32px;
+	letter-spacing:0pt;
+}
