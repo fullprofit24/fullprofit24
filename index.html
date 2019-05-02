@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>ALITIX | Аналитика</title>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Yanone+Kaffeesatz:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<meta Name="author" Lang="en" content="ALITIX | Analytics">
+		<meta Name="author" Lang="ru" content="ALITIX | Аналитика">
+		
+<meta property="og:title" content="Web-студия Magneex - Профессиональное создание сайтов">
+<meta property="og:url" content="https://magneex.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://magneex.com/images/logo.png">
+<meta property="og:site_name" content="Magneex.com">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:description" content="Мы разрабатываем эффективные сайты для развития Вашего бизнеса">
+<link rel="apple-touch-icon" href="https://magneex.com/images/og/76x76.png" sizes="76x76">
+<link rel="apple-touch-icon" href="https://magneex.com/images/og/120x120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://magneex.com/images/og/152x152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="https://magneex.com/images/og/180x180.png" sizes="180x180">
+<link rel="image_src" href="https://magneex.com/images/logo.png">
+
+	</head>
+
+	<body>
+		<!-- error message -->
+		<div class="modal-wrapper" style="z-index:100;">
+			<div class="modal">
+				<div class="head">
+					<a class="btn-close" href="#">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="content_msg">
+					<div class="good-job">
+						<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+						<h1>Возникла ошибка на сервере :-(  Свяжитесь с нами по контактам ниже :-)</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="site_top"></div>
+		<div class="front">
+			<header>
+				<div>
+					<a class="nav-btn-home" style="cursor:pointer;">
+						<article class="c-article">
+							<header class="c-article__header" style="border:none;">
+								<h1 class="c-article__title">
+									<span class="u-font-lora">> Alitix</span>
+								</h1>
+							</header>
+						</article>						
+					</a>
+					<nav class="flex flex-just-between">
+						<a class="nav-btn-about" style="cursor:pointer;">О нас</a>
+						<ul class="dropDown">
+							<li><a class="menu nav-btn-services" style="cursor:pointer;">Услуги</a></li>
+							<li class="drop">
+								<a href="#0" class="">Аналитика бизнес-процессов</a>
+								<a href="#1" class="">Аналитика и прогноз продаж</a>
+								<a href="#2" class="">Маркетинговые исследования</a>
+								<a href="#3" class="">Стратегический анализ</a>
+								<a href="#4" class="">Все услуги...</a>
+							</li>
+						</ul>
+						<a class="nav-btn-politics" style="cursor:pointer;">Наша политика</a>
+						<ul class="dropDown">
+							<li><a class="menu" style="cursor:pointer;">Блог</a></li>
+							<li class="drop">
+								<a href="https://vk.com/" class="">&#9781 &nbsp; Наш блог во Вконтакте</a>
+								<a href="https://facebook.com/" class="">&#9781 &nbsp; Наш блог в Facebook</a>
+							</li>
+						</ul>
+						<a class="nav-btn-contacts" style="cursor:pointer;">Новости</a>
+						<a class="nav-btn-contacts" style="cursor:pointer;">Контакты</a>
+					</nav>
+					<a class="order jsReachGoal" href="#formOrder" data-reachgoal="rgHeaderClickOrder" data-params='{"text":"Связаться с нами"}'>Связаться с нами</a>
+				</div>
+			</header>
+		</div>
+		<div class="site">
+			<div class="form_order" id="formOrder">
+				<div class="order_wrap">
+					<div class="order_block main cba">
+						<a class="icoCont close" href="#closeOrd" title="Закрыть диалог"></a>
+						<sup>СВЯЗАТЬСЯ С НАМИ</sup>
+						<p class="slog">Чтобы задать нам вопрос, заполните форму</p>
+						<form class="order_form jsReachGoalForm" data-reachgoal="rgHeaderSendOrder">
+							<div class="flex flex-just-between">
+								<div class="pole">
+									<label for="name">Представьтесь, пожалуйста <span class="color_red">*</span></label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="pole">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+							</div>
+							<div class="flex flex-just-between">
+								<div class="pole">
+									<label for="phone">Телефон <span class="color_red">*</span></label>
+									<input type="text" name="phone" id="phone" />
+									<label>Переместите бегунок вправо <span class="color_red">*</span></label>
+									<div class="captcha">
+										<div class="captcha_sub"></div>
+									</div>
+									<div class="privacy-policy-info">Наши специалисты свяжутся с Вами в течение суток.</div>
+								</div>
+								<div class="pole">
+									<label for="msg">Дополнительная информация</label>
+									<textarea id="msg" name="msg"></textarea>
+									<input type="submit"  value="Задать вопрос" />
+								</div>
+							</div>
+						</form>
+						<div class="line_form"></div>
+						<div class="text_form">														
+							<p>Также Вы можете получить у нас бесплатную консультацию по вопросам аналитики Вашего бизнеса. Более подробно ознакомиться можете в <a href="privacy.html" target="_blank" style="color: #34a5dd; font-weight: bold;">наших услугах</a></p>
+						</div>
+					</div>
+					<div class="order_block thanks cba">
+						<a class="icoCont close" href="#closeOrd" title="Закрыть диалог"></a>
+						<div class="thanks-center">
+							<sup>Спасибо за заявку!</sup>
+							<p>Наши специалисты свяжутся с Вами в течение суток</p>
+							<a href="#" class="again">Написать еще раз</a>
+						</div>
+					</div>
+				</div>
+				<a class="backgroundOrder" href="#closeOrd"></a>
+			</div>
+
+
+			<div class="content">
+	
+				<div class="blockFull scrollPoint anchor">
+					<div class="whiteSpace"></div>
+					<div class="contentContainer">
+						<div class="videoMain videoMainIndex magic_100">
+
+							<video loop autoplay muted id="videoBigM">
+								<source src="video/MM.mp4" type="video/mp4">
+								<source src="video/MM.webm" type="video/webm">
+
+								<source src="video/MM.ogv" type="video/ogg">
+							</video>
+
+							<div class="videoWrap"></div>
+
+							<div class="block_btn_video">
+								<span class="icoVideo icoVideo-first"></span>
+
+								<h1 class="mainZag">Мы поднимаем Ваш бизнес на Новый уровень!</h1>
+
+								<p class="unmainZag">Грамотная аналитика - основное конкурентное преимущество любого бизнеса!</p>
+							
+        <div class="cba buttonWrap">
+									<!-- TODO <a href="#" class="btn_video download"><span class="icoVideo download"></span>Скачать презентацию</a> -->
+						
+                </div>
+							</div>
+
+
+						</div>
+
+						<div class="arrowDown"></div>
+					</div>
+
+				</div>
+
+
+
+				<div class="blockFull scrollPoint anchor">
+					<div class="contentContainer">
+
+						<div class="serviceBg"></div>
+						<div class="container">
+							<div class="row">
+
+								<div class="col-md-3 col-sm-6">
+									<div class="serviceBox">
+										<div class="service-icon">
+											<i class="fa fa-cubes"></i>
+										</div>
+										<div class="service-content">
+											<h3 class="title">Аналитика бизнес-процессов</h3>
+											<p class="description">
+												Оценка и анализ эффективности бизнес-процессов, подготовка практических рекомендаций
+											</p>
+										</div>
+										<a href="#" class="read">Подробнее...</a>
+									</div>
+								</div>
+
+								<div class="col-md-3 col-sm-6">
+									<div class="serviceBox">
+										<div class="service-icon">
+											<i class="fa fa-rocket"></i>
+										</div>
+										<div class="service-content">
+											<h3 class="title">Аналитика и прогноз продаж</h3>
+											<p class="description">
+												Прогноз, оценка и анализ динамики Вашего развития на основе статистических данных
+											</p>
+										</div>
+										<a href="#" class="read">Подробнее...</a>
+									</div>
+								</div>
+
+								<div class="col-md-3 col-sm-6">
+									<div class="serviceBox">
+										<div class="service-icon">
+											<i class="fa fa-briefcase"></i>
+										</div>
+										<div class="service-content">
+											<h3 class="title">Маркетинговые исследования</h3>
+											<p class="description">
+												Маркетинг, интернет-маркетинг, веб-аналитика, продвижение в сети / SEO, интернет-реклама
+											</p>
+										</div>
+										<a href="#" class="read">Подробнее...</a>
+									</div>
+								</div>
+
+								<div class="col-md-3 col-sm-6">
+									<div class="serviceBox">
+										<div class="service-icon">
+											<i class="fa fa-cogs"></i>
+										</div>
+										<div class="service-content">
+											<h3 class="title">Стратегический анализ</h3>
+											<p class="description">
+												Анализ стратегий бизнеса на основе прогноза и комплексной аналитики Вашей деятельности
+											</p>
+										</div>
+										<a href="#" class="read">Подробнее...</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<a href="#" class="btn-liquid">
+							<span class="inner">БОЛЬШЕ УСЛУГ ❯❯</span>
+						</a>
+					</div>
+
+				</div>
+
+
+
+
+				<div id="after_service" class="blockFull scrollPoint anchor">
+					<div class="contentContainer">
+
+						<section class="cd-hero">
+							<ul class="cd-hero-slider autoplay" style="height:calc(100vh - 100px);">
+
+								<li style="background-color:#ffffff;">
+									<div class="cd-half-width cd-img-container">
+										<img src="assets/tech-2.png" alt="tech 2">
+									</div> <!-- .cd-half-width.cd-img-container -->
+
+									<div class="cd-half-width multiscreen" style="margin-top: -150px;">
+										<h2 style="color:#000000;">Готовые решения проблем бизнеса</h2>
+										<p style="color:#000000;">Мы готовы предложить Вам комплекную аналитику Вашего бизнеса. Оценка, Прогноз, Анализ и Стратегия Вашего устойчивого развития в надёжных руках!</p>
+										<a class="cd-btn jsReachGoal" href="#formOrder" data-reachgoal="rgHeaderClickOrder" data-params='{"text":""}'>СТАРТ</a>
+										<a href="#0" class="cd-btn secondary">ПОДРОБНЕЕ</a>
+									</div> <!-- .cd-half-width -->
+				
+								</li>
+
+								<li style="background-color:#ffffff;">
+									<div class="cd-half-width" style="margin-top: -75px;">
+										<h2 style="color:#000000;">Финансовая выгода</h2>
+										<p style="color:#000000;">Мы предоставляем Наши услуги на аутсосинг, что позволит сократить Ваши издержки по бизнесу от 40% и блеее!</p>
+										<a class="cd-btn jsReachGoal" href="#formOrder" data-reachgoal="rgHeaderClickOrder" data-params='{"text":""}'>СТАРТ</a>
+										<a href="#0" class="cd-btn secondary">ПОДРОБНЕЕ</a>
+									</div> <!-- .cd-half-width -->
+
+									<div class="cd-half-width cd-img-container">
+										<img src="assets/tech-1.png" alt="tech 1">
+									</div> <!-- .cd-half-width.cd-img-container -->
+								</li>
+
+								<li style="background-color:#ffffff;">
+									<div class="cd-half-width cd-img-container">
+										<img src="assets/tech-4.png" alt="tech 1">
+									</div> <!-- .cd-half-width.cd-img-container -->
+
+									<div class="cd-half-width" style="margin-top: -75px;">
+										<h2 style="color:#000000;">Мотивация на результат</h2>
+										<p style="color:#000000;">Мы заинтересованы в Вашем результате. Ваш Рост и устойчивое развитие Вашего бизнеса - залог Нашего дальнейшего сотрудничества!</p>
+										<a class="cd-btn jsReachGoal" href="#formOrder" data-reachgoal="rgHeaderClickOrder" data-params='{"text":""}'>СТАРТ</a>
+										<a href="#0" class="cd-btn secondary">ПОДРОБНЕЕ</a>
+									</div> <!-- .cd-half-width -->
+								</li>
+
+								<li style="background-color:#ffffff;">									
+									<div class="cd-half-width" style="margin-top: -75px;">
+										<h2 style="color:#000000;">Ваша работа - наша забота</h2>
+										<p style="color:#000000;">Все возможные риски, связанные с оказываемыми Нами услугами, перекладываются только на Нас. Таким образом - Вы спокойно занимаетесь своей деятельностью!</p>
+										<a class="cd-btn jsReachGoal" href="#formOrder" data-reachgoal="rgHeaderClickOrder" data-params='{"text":""}'>СТАРТ</a>
+										<a href="#0" class="cd-btn secondary">ПОДРОБНЕЕ</a>
+									</div> <!-- .cd-full-width -->
+
+									<div class="cd-half-width cd-img-container">
+										<img src="assets/tech-3.png" alt="tech 1">
+									</div> <!-- .cd-half-width.cd-img-container -->
+								</li>
+							</ul> <!-- .cd-hero-slider -->
+						</section> <!-- .cd-hero -->
+					</div>
+
+				</div>
+
+
+
+
+				<div class="blockFull scrollPoint anchor">
+					<div class="contentContainer" style="position: relative; background-image:url('alitix_services.png'); background-size: auto 100%; background-repeat: no-repeat; background-position: center 0;">
+						<div style="position: absolute; width:100%; height:calc(100vh * 0.37); background-image:url('services_bg0.png'); background-size: auto 100%; background-repeat: no-repeat; background-position: 0 0;"></div>
+						<div style="position: absolute; bottom:0px; width:100%; height:calc(100vh * 0.35); background-image:url('services_bg1.png'); background-size: auto 100%; background-repeat: no-repeat; background-position: 0 0;"></div>
+						<div class="header-steps">
+							<h1 class="gamma lato thin uppercase ls-xlarge"><br>
+								<span class="open-sans tera ls-xlarge bold">ЭТАПЫ</span><br>
+								<span class="epsilon ms-xlarge">НАШЕЙ РАБОТЫ</span>
+							</h1>
+						</div>
+						<a href="#" class="btn-liquid-steps">
+							<span class="inner">
+								<img src='steps_inf.png' class="inf-steps"/>
+								<img src='steps_inf48.png' class="inf-steps48"/>
+							</span>
+						</a>
+						<div class="steps-info"><dfn data-info="Все услуги ..."><div style="width:50px; height:50px;"></div></dfn></div>
+					</div>
+				</div>
+
+
+				<div class="blockFull scrollPoint anchor" style="background-image:url('our_team_bg10.png'); background-size: auto 100%; background-repeat: no-repeat; background-position: 0 2px;">
+					<div class="team_bg2" style="display:block; position:absolute; right:0px; height:calc(50vh - 50px); width:calc((50vh - 50px)*485/788); background-image:url('our_team_bg2.png'); background-size: auto 100%;"></div>
+					<div class="whiteSpace" style="background-color:transparent;">
+						<p class="hd">НАША КОМАНДА</p>
+					</div>
+					<div class="contentContainer index-info my_team">
+						<div class="w960">
+
+							<i></i>
+							<section>
+								<h2 class="head_title" style="color:#444;">Бизнес-аналитика – это точный расчет<img src="ico-anal.png" style="opacity:0.5; position:absolute; margin-left:20px; margin-top:-3px;"></h2>
+
+								<p><strong>Alitix</strong> – это команда специалистов, работающих по разным бизнес-направлениям, основным из которых является <b>бизнес-аналитика!</b> Мы помогаем своим клиентам эффективно развивать их бизнес. Исследование рынка, аналитика бизнес-процессов, прогноз продаж и стратегия Вашего развития - всё это <b>Alitix!</b> Постоянная профилактика Вашего бизнеса - залог его устойчивого и успешного развития!</p>						
+								<a class="btn-toContacts" style="border-radius:0; cursor:pointer;">КОНТАКТЫ</a>
+							</section>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+				<div class="blockFull scrollPoint">
+					<div class="whiteSpace" style="background-color:#f4f4f4;">
+   <span class="icoWs document"></span>
+</div>
+					
+<div class="ourClients">
+						<div class="w960 m75">
+							<h2 class="head_title jsReachGoalScroll" data-reachgoal="rgPageMainGoToOurClients" style="color:#555;">ПОСЛЕДНИЕ НОВОСТИ</h2>
+
+							<div class="cb"></div>
+
+							<div class="slider_clients_block">
+
+								<div class="slider_clients owl-carousel" id="owl-clients">
+
+									<div class="slide_client">	
+										<a class="link_client jsReachGoal" rel="nofollow" target="_blank" href="https://www.vedomosti.ru/finance/articles/2019/03/21/797014-rosselhozbank" data-reachgoal="rgPageMainBlog" data-params='{"source":"article"}'>
+											<span class="img_client flex flex-align-center lex-just-center">
+						  						<img class="set_clients" src="news/news-01.png" alt='Инвестиции и вклады' title='Инвестиции и вклады' />
+											</span>
+											<span class="lid_client">Россельхозбанк стал прибыльным впервые с 2013 года</span>
+										</a>
+									</div>
+									<div class="slide_client">
+										<a class="link_client jsReachGoal" rel="nofollow" target="_blank" href="https://www.vedomosti.ru/economics/articles/2019/03/25/797255-tsb-anonsiroval" data-reachgoal="rgPageMainBlog" data-params='{"source":"article"}'>
+											<span class="img_client flex flex-align-center lex-just-center">
+					  							<img class="set_clients" src="news/news-02.png" alt='Прогнозы' title='Прогнозы' />
+											</span>
+											<span class="lid_client">ЦБ анонсировал снижение ключевой ставки в 2019 году</span>
+										</a>
+									</div>
+									<div class="slide_client">
+										<a class="link_client jsReachGoal" rel="nofollow" target="_blank" href="https://www.vedomosti.ru/finance/articles/2018/12/26/790225-chego-zhdut-finansisti" data-reachgoal="rgPageMainBlog" data-params='{"source":"article"}'>
+											<span class="img_client flex flex-align-center lex-just-center">
+					  							<img class="set_clients" src="news/news-03.png" alt='Прогнозы' title='Прогнозы' />
+											</span>
+											<span class="lid_client">Чего ждут финансисты от 2019 года</span>
+										</a>
+									</div>
+									<div class="slide_client">
+										<a class="link_client jsReachGoal" rel="nofollow" target="_blank" href="https://www.vedomosti.ru/management/articles/2019/03/21/797025-bivshie-menedzheri-delivery-club-i-gazproma" data-reachgoal="rgPageMainBlog" data-params='{"source":"article"}'>
+											<span class="img_client flex flex-align-center lex-just-center">
+						  						<img class="set_clients" src="news/news-04.png" alt='Бизнес и предпринемательство' title='Бизнес и предпринемательство' />
+											</span>
+											<span class="lid_client">Как зарабатывают на хламе бывшие менеджеры Delivery Club и Газпром</span>
+										</a>
+									</div>
+									<div class="slide_client">
+										<a class="link_client jsReachGoal" rel="nofollow" target="_blank" href="https://www.vedomosti.ru/management/articles/2019/02/17/794348-nachalniku-perfektsionizm" data-reachgoal="rgPageMainBlog" data-params='{"source":"article"}'>
+											<span class="img_client flex flex-align-center lex-just-center">
+						  						<img class="set_clients" src="news/news-05.png" alt='Видение и бизнес' title='Видение и бизнес' />
+											</span>
+											<span class="lid_client">Почему начальнику противопоказан перфекционизм</span>
+										</a>
+									</div>
+									<div class="slide_client">
+										<a class="link_client jsReachGoal" rel="nofollow" target="_blank" href="https://www.vedomosti.ru/economics/characters/2019/02/12/793984-maksim-oreshkin" data-reachgoal="rgPageMainBlog" data-params='{"source":"article"}'>
+											<span class="img_client flex flex-align-center lex-just-center">
+					  							<img class="set_clients" src="news/news-06.png" alt='Аналитика и прогнозы' title='Аналитика и прогнозы' />
+											</span>
+											<span class="lid_client">Максим Орешкин: «В 2019 году мы увидим замедление темпов роста экономики»</span>
+										</a>
+									</div>
+								</div>
+
+
+								<div class="nav_slider_clients">
+									<a href="#" class="btn_slider_cl prev"><span class="icoCont grAr"></span></a>
+									<a href="#" class="btn_slider_cl next"><span class="icoCont grAr"></span></a>
+
+								</div>
+
+							</div>
+						</div>
+					
+</div>
+
+				</div>
+			</div>
+
+			<div class="fake-footer"></div>
+		</div>
+
+
+		<footer class="footer vcard anchor"">
+			<div class="footer__container">
+				<div class="footer__columns">
+					<div class="footer__column">
+						<div class="footer__group">
+							<b class="footer__label">Телефон отдела продаж:</b>
+							<a class="footer__phone tel" href="tel:+73902399050" rel="nofollow">+7 (3902) 399-050</a>
+						</div>
+						<a class="footer__order-button jsReachGoal" href="#formOrder" data-reachgoal="rgFooterClickOrder" data-params='{"text":"Обсудить проект"}'>Задать вопрос</a>
+					</div>
+					<div class="footer__column">
+						<div class="footer__group">
+							<b class="footer__label">Наш адрес:</b>
+							<span class="adr"><span class="locality"><img src="geo-ic.png" />&nbsp; Россия, г. Пенза</span></span>
+						</div>
+						<div class="footer__group">
+							<b class="footer__label">Пишите нам:</b>
+							<span><a class="footer__link email" href="mailto:sales-department@alitix.com" rel="nofollow">sales-department@alitix.com</a></span>
+							<span style="margin-top:4px;"><a class="footer__link email" href="mailto:info@alitix.com" rel="nofollow">info@alitix.com</a></span>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__group">
+							<b class="footer__label">Следуйте за нами:</b>
+							<div class="footer__social-buttons">
+								<a class="footer__social-button footer__social-button--vk" href="http://vk.com" rel="nofollow" target="_blank" title="ВКонтакте"></a>
+								<a class="footer__social-button footer__social-button--fb" href="https://www.facebook.com" rel="nofollow" target="_blank" title="Facebook"></a>
+								<a class="footer__social-button footer__social-button--tw" href="https://twitter.com" rel="nofollow" target="_blank" title="Twitter"></a>
+							</div>
+						</div>
+
+						<div class="footer__group">
+							<div class="footer__partners-buttons">
+								<a class="footer__partners-button" target="_blank">
+									<img src="footer_ico.png" width="88" height="56">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottoms">
+				<div class="footer__container" style="text-align:center;"><span class="fn org" style="margin-left:-10px;">&copy; Alitix</span> | 2019</div>
+			</div>
+		</footer>
+
+
+
+
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.inputmask.bundle.min.js"></script>
+		<script src="js/owl/owl.carousel.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/mgUploader.js"></script>
+		<script src="js/orderSite.js?v=1.1.1.4"></script>
+		<script src="js/fns.js?v=1.1.1.4"></script>
+		<script src="js/video.js?v=1.1.1.4"></script>
+
+		
+<script src="js/mainNewsSlider.js?v=1.1.1.4"></script>
+
+
+		<script src="js/moreServices_button.js"></script>
+		<script src="js/moreSteps_button.js"></script>
+		<script src="js/mainSliderAbout.js"></script>
+		<script src="js/modernizrSliderAbout.js"></script>
+		<script src="js/scrollBlock.js"></script>
+		<script src="js/btnLink.js"></script>
+
+		<script src="js/mailto/mailto.js"></script>
+	</body>
+</html>
+	
+	
