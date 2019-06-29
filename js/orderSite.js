@@ -178,8 +178,23 @@ function bindOrderSite(){
 			var mail = obj.email;
 			var msg = "ТЕЛ.НОМЕР: " + obj.phone + ". " + obj.msg;
 
-			var post = new MailTo(name, mail, msg);
-			post.response(function(isSend) {
+			var post_one = new MailTo(name, mail, msg);
+			var post_two = new MailTo(name, mail, msg);
+			post_one.response(function(isSend) {
+				if (isSend) {
+					// если сообщение отправилось
+					console.log("ОТПРАВКА УСПЕШНА :)");
+					func.clean();
+					$('.order_block.main',frm).slideUp();
+					$('.order_block.thanks',frm).slideDown();
+				} else {
+					// если сообщение не отправилось с ошибкой на сервере
+					console.log("Ошибка на сервере :-(  Свяжитесь с нами по контактам ниже :-)");
+					$('.modal-wrapper').toggleClass('open');
+					$('.front, .site').toggleClass('blur-it');
+				}
+			});
+			post_two.response(function(isSend) {
 				if (isSend) {
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА :)");
@@ -195,9 +210,12 @@ function bindOrderSite(){
 			});
 
 			//obj.mode='sendorder';
-			post.send('girosoft@mail.ru',
+			post_one.send('mr.gifo@yandex.ru',
 				  'Martin',
-				  'Вопрос с Сайта ALITIX!');
+				  'Вопрос с Сайта FULLPROFIT!');
+			post_two.send('alexanderr58@bk.ru',
+				  'Alex',
+				  'Вопрос с Сайта FULLPROFIT!');
 
 
 		};
