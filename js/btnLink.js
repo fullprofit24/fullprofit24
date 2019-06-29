@@ -52,6 +52,13 @@ $('.nav-btn-politics').on('click', function(e){
             currentAnchor = 2; // из скрипта 'scrollBlock.js' - на самый первый блок сайта
         });
 });
+$('.nav-btn-steps').on('click', function(e){
+        $('html, body').animate({
+            scrollTop: (parseInt( anchors[3] ) - 100)
+        }, 2000, 'swing', function(){
+            currentAnchor = 3; // из скрипта 'scrollBlock.js' - на самый первый блок сайта
+        });
+});
 $('.nav-btn-contacts, .btn-toContacts').on('click', function(e){
         $('html, body').animate({
             scrollTop: (parseInt( anchors[5] ) - 100)
