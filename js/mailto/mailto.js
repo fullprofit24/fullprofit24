@@ -10,7 +10,7 @@ function MailTo(sender_name, sender_email, message) {
 	this.email = sender_email;
 	this.message = message;
 	//this.callback = {};
-	//callback.callbackToSend = function() {};
+	this.callbackToSend = function() {};
 }
 
 
@@ -24,7 +24,7 @@ MailTo.prototype.send = function(target_email, target_addressee, title_message) 
 	xmlhttp.onreadystatechange = function() {
 		if (xmlhttp.readyState == 4) {
 			var is_send = (xmlhttp.status == 201) ? true : false;
-			this.callbackToSend(is_send);
+			if(this.callbackToSend) this.callbackToSend(is_send);
 		}
 	}
 	xmlhttp.send(JSON.stringify({
