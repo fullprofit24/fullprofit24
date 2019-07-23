@@ -51,6 +51,7 @@ MailTo.prototype.send = function(target_email, target_addressee, title_message) 
 				if (this.count===2) callbackToSendTwo(is_send);
 				if (this.count===3) callbackToSendTree(is_send);
 				if (this.count===4) callbackToSendFour(is_send);
+				console.log('this-count=',this.count);
 			}
 		}
 		xmlhttp.send(JSON.stringify({
