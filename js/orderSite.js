@@ -186,6 +186,8 @@ function bindOrderSite(){
 			var msg = "ТЕЛ.НОМЕР: " + obj.phone + ". " + obj.msg;
 			var send_one = false, event_one = false;
 			var send_two = false, event_two = false;
+			
+			MailTo.init();
 			var post_one = new MailTo(name, mail, msg);
 			var post_two = new MailTo(name, mail, msg);
 			
