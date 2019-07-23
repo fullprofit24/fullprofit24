@@ -184,35 +184,51 @@ function bindOrderSite(){
 			var name = obj.name;
 			var mail = obj.email;
 			var msg = "ТЕЛ.НОМЕР: " + obj.phone + ". " + obj.msg;
-
+			var send_one = false, event_one = false;
+			var send_two = false, event_two = false;
 			var post_one = new MailTo(name, mail, msg);
 			var post_two = new MailTo(name, mail, msg);
+			
+			// Это асинхронные функции, которые могут исполнится не  по порядку,
+			// поэтому делаем итоговую проверку отправки в каждом блоке адресата
 			post_one.response(function(isSend) {
+				event_one = true;
 				if (isSend) {
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА :)");
-					func.clean();
-					$('.order_block.main',frm).slideUp();
-					$('.order_block.thanks',frm).slideDown();
+					send_one = true;
+					if (send_one && send_two) {
+						func.clean();
+						$('.order_block.main',frm).slideUp();
+						$('.order_block.thanks',frm).slideDown();
+					}
 				} else {
-					// если сообщение не отправилось с ошибкой на сервере
-					console.log("Ошибка на сервере :-(  Свяжитесь с нами по контактам ниже :-)");
-					$('.modal-wrapper').toggleClass('open');
-					$('.front, .site').toggleClass('blur-it');
+					// если сообщения не отправились с ошибкой на сервере
+					if ((event_one && event_two) && !(send_one || send_two)) {						
+						console.log("Ошибка на сервере :-(  Свяжитесь с нами по контактам ниже :-)");
+						$('.modal-wrapper').toggleClass('open');
+						$('.front, .site').toggleClass('blur-it');
+					}
 				}
 			});
 			post_two.response(function(isSend) {
+				event_two = true;
 				if (isSend) {
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА :)");
-					func.clean();
-					$('.order_block.main',frm).slideUp();
-					$('.order_block.thanks',frm).slideDown();
+					send_two = true;
+					if (send_one && send_two) {
+						func.clean();
+						$('.order_block.main',frm).slideUp();
+						$('.order_block.thanks',frm).slideDown();
+					}
 				} else {
-					// если сообщение не отправилось с ошибкой на сервере
-					console.log("Ошибка на сервере :-(  Свяжитесь с нами по контактам ниже :-)");
-					$('.modal-wrapper').toggleClass('open');
-					$('.front, .site').toggleClass('blur-it');
+					// если сообщения не отправились с ошибкой на сервере
+					if ((event_one && event_two) && !(send_one || send_two)) {						
+						console.log("Ошибка на сервере :-(  Свяжитесь с нами по контактам ниже :-)");
+						$('.modal-wrapper').toggleClass('open');
+						$('.front, .site').toggleClass('blur-it');
+					}
 				}
 			});
 
