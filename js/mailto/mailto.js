@@ -20,6 +20,26 @@ MailTo.init = function() {
 	mailto_countDestination = 0;
 }
 
+// Каждому из 4-х возможных адресатов соответствует отдельный callback-response
+MailTo.prototype.callbackToSendOne = function() {}
+MailTo.prototype.callbackToSendTwo = function() {}
+MailTo.prototype.callbackToSendTree = function() {}
+MailTo.prototype.callbackToSendFour = function() {}
+MailTo.prototype.callbackToSend = function(is_send) {
+	if (this.count===1) callbackToSendOne(is_send);
+	if (this.count===2) callbackToSendTwo(is_send);
+	if (this.count===3) callbackToSendTree(is_send);
+	if (this.count===4) callbackToSendFour(is_send);
+}
+
+// Callback метод - позволяет получить статус отправки текущего письма (true/false)
+MailTo.prototype.response = function(callback) {
+	if (this.count===1) callbackToSendOne = callback;
+	if (this.count===2) callbackToSendTwo = callback;
+	if (this.count===3) callbackToSendTree = callback;
+	if (this.count===4) callbackToSendFour = callback;
+}
+
 // Метод отправки письма получателю
 // Поля - email получателя, имя (название организации) получателя, тема (заголовок) письма
 MailTo.prototype.send = function(target_email, target_addressee, title_message) {
@@ -53,24 +73,4 @@ MailTo.prototype.send = function(target_email, target_addressee, title_message) 
 			}]
 		}));
 	}
-}
-
-// Каждому из 4-х возможных адресатов соответствует отдельный callback-response
-MailTo.prototype.callbackToSendOne = function() {}
-MailTo.prototype.callbackToSendTwo = function() {}
-MailTo.prototype.callbackToSendTree = function() {}
-MailTo.prototype.callbackToSendFour = function() {}
-MailTo.prototype.callbackToSend = function(is_send) {
-	if (this.count===1) callbackToSendOne(is_send);
-	if (this.count===2) callbackToSendTwo(is_send);
-	if (this.count===3) callbackToSendTree(is_send);
-	if (this.count===4) callbackToSendFour(is_send);
-}
-
-// Callback метод - позволяет получить статус отправки текущего письма (true/false)
-MailTo.prototype.response = function(callback) {
-	if (this.count===1) callbackToSendOne = callback;
-	if (this.count===2) callbackToSendTwo = callback;
-	if (this.count===3) callbackToSendTree = callback;
-	if (this.count===4) callbackToSendFour = callback;
 }
