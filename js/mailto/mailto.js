@@ -53,7 +53,7 @@ MailTo.prototype.send = function(target_email, target_addressee, title_message) 
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4) {
 				var is_send = (xmlhttp.status == 201) ? true : false;
-				callbackToSend(is_send);
+				callbackToSendOne(is_send);
 			}
 		}
 		xmlhttp.send(JSON.stringify({
