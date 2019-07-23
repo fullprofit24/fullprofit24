@@ -191,7 +191,7 @@ function bindOrderSite(){
 			
 			// Это асинхронные функции, которые могут исполнится не  по порядку,
 			// поэтому делаем итоговую проверку отправки в каждом блоке адресата
-			post_one.response(function(isSend) {
+			MailTo.response(function(isSend) {
 				event_one = true;
 				if (isSend) {
 					// если сообщение отправилось
@@ -213,7 +213,7 @@ function bindOrderSite(){
 					console.log('one',event_one, 'no', event_one, event_two, send_one, send_two);
 				}
 			});
-			post_two.response(function(isSend) {
+			MailTo.response(function(isSend) {
 				event_two = true;
 				if (isSend) {
 					// если сообщение отправилось
