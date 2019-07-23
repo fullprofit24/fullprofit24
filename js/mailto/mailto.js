@@ -25,12 +25,6 @@ MailTo.prototype.callbackToSendOne = function() {}
 MailTo.prototype.callbackToSendTwo = function() {}
 MailTo.prototype.callbackToSendTree = function() {}
 MailTo.prototype.callbackToSendFour = function() {}
-MailTo.prototype.callbackToSend = function(is_send) {
-	if (this.count===1) callbackToSendOne(is_send);
-	if (this.count===2) callbackToSendTwo(is_send);
-	if (this.count===3) callbackToSendTree(is_send);
-	if (this.count===4) callbackToSendFour(is_send);
-}
 
 // Callback метод - позволяет получить статус отправки текущего письма (true/false)
 MailTo.prototype.response = function(callback) {
@@ -53,7 +47,10 @@ MailTo.prototype.send = function(target_email, target_addressee, title_message) 
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4) {
 				var is_send = (xmlhttp.status == 201) ? true : false;
-				callbackToSendOne(is_send);
+				if (this.count===1) callbackToSendOne(is_send);
+				if (this.count===2) callbackToSendTwo(is_send);
+				if (this.count===3) callbackToSendTree(is_send);
+				if (this.count===4) callbackToSendFour(is_send);
 			}
 		}
 		xmlhttp.send(JSON.stringify({
