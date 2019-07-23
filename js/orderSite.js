@@ -150,6 +150,13 @@ function bindOrderSite(){
 			// 		}
 			// 	}
 			// }
+			
+			// Проверка на э-мэил
+			if(obj.email!==''){
+				if(!$('input[name="email"]',frm).inputmask('isComplete')){
+					obj.email='nomail-client@noreply.ru'
+				}
+			} else { obj.email='nomail-client@noreply.ru' }
 
 			if(obj.phone===''){
 				err+='Введите телефон<br />';
