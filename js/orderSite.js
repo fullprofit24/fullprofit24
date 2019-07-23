@@ -184,6 +184,7 @@ function bindOrderSite(){
 			var name = obj.name;
 			var mail = obj.email;
 			var msg = "ТЕЛ.НОМЕР: " + obj.phone + ". " + obj.msg;
+			
 			var send_one = false, event_one = false;
 			var send_two = false, event_two = false;
 			
@@ -197,14 +198,13 @@ function bindOrderSite(){
 				event_one = true;
 				if (isSend) {
 					// если сообщение отправилось
-					console.log("ОТПРАВКА УСПЕШНА :)");
+					console.log("ОТПРАВКА УСПЕШНА /MARTIN/ :)");
 					send_one = true;
 					if (send_one && send_two) {
 						func.clean();
 						$('.order_block.main',frm).slideUp();
 						$('.order_block.thanks',frm).slideDown();
 					}
-					console.log('one',event_one, 'yes', send_one, send_two);
 				} else {
 					// если сообщения не отправились с ошибкой на сервере
 					if ((event_one && event_two) && !(send_one || send_two)) {						
@@ -212,21 +212,19 @@ function bindOrderSite(){
 						$('.modal-wrapper').toggleClass('open');
 						$('.front, .site').toggleClass('blur-it');
 					}
-					console.log('one',event_one, 'no', event_one, event_two, send_one, send_two);
 				}
 			});
 			post_two.response(function(isSend) {
 				event_two = true;
 				if (isSend) {
 					// если сообщение отправилось
-					console.log("ОТПРАВКА УСПЕШНА :)");
+					console.log("ОТПРАВКА УСПЕШНА /ALEX/ :)");
 					send_two = true;
 					if (send_one && send_two) {
 						func.clean();
 						$('.order_block.main',frm).slideUp();
 						$('.order_block.thanks',frm).slideDown();
 					}
-					console.log('two',event_two, 'yes', send_one, send_two);
 				} else {
 					// если сообщения не отправились с ошибкой на сервере
 					if ((event_one && event_two) && !(send_one || send_two)) {						
@@ -234,7 +232,6 @@ function bindOrderSite(){
 						$('.modal-wrapper').toggleClass('open');
 						$('.front, .site').toggleClass('blur-it');
 					}
-					console.log('two',event_two, 'no', event_one, event_two, send_one, send_two);
 				}
 			});
 
