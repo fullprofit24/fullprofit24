@@ -39,7 +39,8 @@ MailTo.prototype.response = function(callback) {
 MailTo.prototype.send = function(target_email, target_addressee, title_message) {
 	if (this.count > mailto_maxDestination) {
 		console.log('LOG: MailTo - error send the message, need to hold init()!');
-	} else {	
+	} else {
+		var count = this.count;
 		var xmlhttp = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 		xmlhttp.open('POST', 'https://api.sendinblue.com/v3/smtp/email');
 		xmlhttp.setRequestHeader('Content-Type', 'application/json');
@@ -47,11 +48,11 @@ MailTo.prototype.send = function(target_email, target_addressee, title_message) 
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4) {
 				var is_send = (xmlhttp.status == 201) ? true : false;
-				if (this.count===1) callbackToSendOne(is_send);
-				if (this.count===2) callbackToSendTwo(is_send);
-				if (this.count===3) callbackToSendTree(is_send);
-				if (this.count===4) callbackToSendFour(is_send);
-				console.log('this-count=',this.count);
+				if (count===1) callbackToSendOne(is_send);
+				if (count===2) callbackToSendTwo(is_send);
+				if (count===3) callbackToSendTree(is_send);
+				if (count===4) callbackToSendFour(is_send);
+				console.log('this-count=',count);
 			}
 		}
 		xmlhttp.send(JSON.stringify({
