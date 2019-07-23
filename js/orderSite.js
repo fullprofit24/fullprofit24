@@ -202,6 +202,7 @@ function bindOrderSite(){
 						$('.order_block.main',frm).slideUp();
 						$('.order_block.thanks',frm).slideDown();
 					}
+					console.log('one',event_one, 'yes', send_one, send_two);
 				} else {
 					// если сообщения не отправились с ошибкой на сервере
 					if ((event_one && event_two) && !(send_one || send_two)) {						
@@ -209,6 +210,7 @@ function bindOrderSite(){
 						$('.modal-wrapper').toggleClass('open');
 						$('.front, .site').toggleClass('blur-it');
 					}
+					console.log('one',event_one, 'no', event_one, event_two, send_one, send_two);
 				}
 			});
 			post_two.response(function(isSend) {
@@ -222,6 +224,7 @@ function bindOrderSite(){
 						$('.order_block.main',frm).slideUp();
 						$('.order_block.thanks',frm).slideDown();
 					}
+					console.log('two',event_two, 'yes', send_one, send_two);
 				} else {
 					// если сообщения не отправились с ошибкой на сервере
 					if ((event_one && event_two) && !(send_one || send_two)) {						
@@ -229,6 +232,7 @@ function bindOrderSite(){
 						$('.modal-wrapper').toggleClass('open');
 						$('.front, .site').toggleClass('blur-it');
 					}
+					console.log('two',event_two, 'no', event_one, event_two, send_one, send_two);
 				}
 			});
 
