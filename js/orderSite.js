@@ -241,7 +241,7 @@ function bindOrderSite(){
 			post_two.send('Alexanderyes58@yandex.ru',
 				  'Alex',
 				  'Вопрос с Сайта FULLPROFIT!');
-			post_one.send('martin.gifo@gmail.com',
+			post_one.send('girosoft@mail.ru',
 				  'Martin',
 				  'Вопрос с Сайта FULLPROFIT!');
 			
