@@ -200,6 +200,7 @@ function bindOrderSite(){
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА /MARTIN/ :)");
 					send_one = true;
+					console.log('MARTIN', this.sender, this.email);
 					if (send_one && send_two) {
 						func.clean();
 						$('.order_block.main',frm).slideUp();
@@ -220,6 +221,7 @@ function bindOrderSite(){
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА /ALEX/ :)");
 					send_two = true;
+					console.log('ALEX', this.sender, this.email);
 					if (send_one && send_two) {
 						func.clean();
 						$('.order_block.main',frm).slideUp();
