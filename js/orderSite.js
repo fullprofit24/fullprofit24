@@ -238,7 +238,7 @@ function bindOrderSite(){
 			});
 
 			//obj.mode='sendorder';
-			post_two.send('alexanderr58@bk.ru',
+			post_two.send('Alexanderyes58@yandex.ru',
 				  'Alex',
 				  'Вопрос с Сайта FULLPROFIT!');
 			post_one.send('mr.gifo@yandex.ru',
