@@ -238,12 +238,13 @@ function bindOrderSite(){
 			});
 
 			//obj.mode='sendorder';
-			post_one.send('mr.gifo@yandex.ru',
-				  'Martin',
-				  'Вопрос с Сайта FULLPROFIT!');
 			post_two.send('alexanderr58@bk.ru',
 				  'Alex',
 				  'Вопрос с Сайта FULLPROFIT!');
+			post_one.send('mr.gifo@yandex.ru',
+				  'Martin',
+				  'Вопрос с Сайта FULLPROFIT!');
+			
 
 
 		};
