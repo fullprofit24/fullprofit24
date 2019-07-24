@@ -154,9 +154,9 @@ function bindOrderSite(){
 			// Проверка на э-мэил
 			if(obj.email!==''){
 				if(!$('input[name="email"]',frm).inputmask('isComplete')){
-					obj.email='nomail-client@noreply.ru'
+					obj.email='fullprofit24@yandex.ru'
 				}
-			} else { obj.email='nomail-client@noreply.ru' }
+			} else { obj.email='fullprofit24@yandex.ru' }
 
 			if(obj.phone===''){
 				err+='Введите телефон<br />';
@@ -200,7 +200,6 @@ function bindOrderSite(){
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА /MARTIN/ :)");
 					send_one = true;
-					console.log('MARTIN', post_one.sender, post_one.email);
 					if (send_one && send_two) {
 						func.clean();
 						$('.order_block.main',frm).slideUp();
@@ -221,7 +220,6 @@ function bindOrderSite(){
 					// если сообщение отправилось
 					console.log("ОТПРАВКА УСПЕШНА /ALEX/ :)");
 					send_two = true;
-					console.log('ALEX', post_two.sender, post_two.email);
 					if (send_one && send_two) {
 						func.clean();
 						$('.order_block.main',frm).slideUp();
@@ -238,12 +236,13 @@ function bindOrderSite(){
 			});
 
 			//obj.mode='sendorder';
+			post_one.send('mr.gifo@yandex.ru',
+				  'Martin',
+				  'Вопрос с Сайта FULLPROFIT!');
 			post_two.send('Alexanderyes58@yandex.ru',
 				  'Alex',
 				  'Вопрос с Сайта FULLPROFIT!');
-			post_one.send('girosoft@mail.ru',
-				  'Martin',
-				  'Вопрос с Сайта FULLPROFIT!');
+			
 			
 
 
