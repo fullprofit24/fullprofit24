@@ -28,7 +28,7 @@ $(function(){
 		$('html, body').animate({
 				scrollTop: (parseInt( anchors[currentAnchor] ) - 100)
 			}, {
-				duration: 12000,
+				duration: 1200,
 				specialEasing: { scrollTop: animation },
 				complete: function() { isAnimating  = false; }
 			}
