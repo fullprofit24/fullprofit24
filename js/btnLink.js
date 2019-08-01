@@ -12,7 +12,9 @@
 });
 
 setTimeout(function() {
+	console.log('IS HASH!!!!!!!');
       if (window.location.hash) {   
+	      console.log('IS HASH IF!!!!!!!');
           var hash = window.location.hash.substr(1);
           var scrollPos = $('a[name="'+hash+'"]').offset().top;
 	  $('html, body').animate({
