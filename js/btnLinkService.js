@@ -1,8 +1,14 @@
+// Плавный анимированный переход по якорю с главной страницы
 setTimeout(function() {
-      if (window.location.hash) {   
-          var hash = window.location.hash.substr(1);
-          var scrollPos = $('a[name="'+hash+'"]').offset().top;
-          $("html, body").animate({ scrollTop: scrollPos }, 1000);
+      if (window.location.hash) {
+	  $("html,body").scrollTop("0");
+          var hash = window.location.hash;
+          var scrollPos = $(hash).offset().top;
+	  $('html, body').animate({
+			scrollTop: (scrollPos - 100)
+		}, 2000, 'swing', function(){
+            		//currentAnchor = 5;
+	  });
        }
 }, 1);
 
