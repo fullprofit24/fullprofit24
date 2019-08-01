@@ -16,7 +16,7 @@ setTimeout(function() {
       if (window.location.hash) {   
 	      console.log('IS HASH IF!!!!!!!');
           var hash = window.location.hash;
-          var scrollPos = $('[name="'+hash+'"]').offset().top;
+          var scrollPos = $('name="'+hash+'"').offset().top;
 	  $('html, body').animate({
 			scrollTop: (scrollPos - 100)
 		}, 2000, 'swing', function(){
