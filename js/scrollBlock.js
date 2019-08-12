@@ -10,7 +10,7 @@ $(function(){
             anchors.push( $(element).offset().top );
         });
     }
-
+    /*
     $('html, body').on('wheel mousewheel DOMMouseScroll MozMousePixelScroll', function(e){
         e.stopPropagation();
         e.preventDefault();
@@ -35,7 +35,8 @@ $(function(){
 		);
 	}
     });
+    */
 
-    updateAnchors();   
+    //updateAnchors();   
     
 });
