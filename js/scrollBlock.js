@@ -10,11 +10,12 @@ $(function(){
             anchors.push( $(element).offset().top );
         });
     }
-    /*
+    
     $('html, body').on('wheel mousewheel DOMMouseScroll MozMousePixelScroll', function(e){
         e.stopPropagation();
         e.preventDefault();
-	if (isAnimating) { return false; }
+	window.scrollBy({ top: 100, behavior: 'smooth' });
+	/*if (isAnimating) { return false; }
 
 	var animation = "easeOutCubic";
 	if (!isAnimating) {
@@ -33,9 +34,9 @@ $(function(){
 				complete: function() { isAnimating  = false; }
 			}
 		);
-	}
+	}*/
     });
-    */
+    
 
     //updateAnchors();   
     
