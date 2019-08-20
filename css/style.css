@@ -401,14 +401,14 @@ p.hd {
 */
 /*???????‚?µ???‚*/
 .content{
-	/*min-height: 400px;*/
+	min-height: 400px;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 }
 
 .content2{
-	min-height: 400px;*/
+	min-height: 400px;
 	width: 80%; /* Ширина блока */
 	height: auto;
 	overflow: hidden;
