@@ -408,8 +408,8 @@ p.hd {
 }
 
 .content2{
-	min-height: 400px;
-	width: 50%; /* Ширина блока */
+	min-height: 200px;
+	width: 80%; /* Ширина блока */
 	height: auto;
 	overflow: hidden;
 }
