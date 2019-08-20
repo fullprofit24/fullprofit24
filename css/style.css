@@ -401,7 +401,7 @@ p.hd {
 */
 /*???????‚?µ???‚*/
 .content{
-	min-height: 400px;
+	/*min-height: 400px;*/
 	width: 100%;
 	height: auto;
 	overflow: hidden;
