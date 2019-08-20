@@ -408,12 +408,12 @@ p.hd {
 }
 
 .content2{
-	
+	min-height: 400px;*/
 	width: 80%; /* Ширина блока */
 	height: auto;
 	overflow: hidden;
-        padding: 10px; /* Отступ внутри блока */
-        /*min-height: 400px;*/
+        padding: 100px; /* Отступ внутри блока */
+       
 }
 .head_title{
 	margin: 0;
