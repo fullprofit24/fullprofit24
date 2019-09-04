@@ -14,6 +14,10 @@ function bindOrderSite(){
 	var frm=$('#formOrder');
 	if(!frm.size())
 		return false;
+	
+	var fromSrv = $('input[type="text"]',frm).val();
+	$('textarea[name="msg"]',frm).val(fromSrv);
+	
 	var func={};
 	/* + Работа со слайдером */
 	var max=Math.floor(Math.random() * (100000 - 100 + 1)) + 100;
