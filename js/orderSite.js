@@ -185,6 +185,9 @@ function bindOrderSite(){
 		/* ++ Отправка данных в хендлер */
 		func.hand=function(obj){
 
+			var fromSrv = $('input[type="text"]',frm).val();
+			console.log('click form2:',fromSrv);
+			
 			// Отпрака посредством сервиса через класс MailTo
 			var name = obj.name;
 			var mail = obj.email;
