@@ -18,7 +18,7 @@ function goEl(){
         if ($(scroll_el).length != 0) {
 	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
         }
-        yaCounter25292768.reachGoal('rgPageServiceAdminTarifs');
+        //yaCounter54256198.reachGoal('rgPageServiceAdminTarifs');
 	    return false;
     });
 }
@@ -55,33 +55,37 @@ function bindYaReachGoal(){
 		var th = $(this),
 			name = th.data('reachgoal'),
 			params = {text: $('.name_project',th.parents('.inf_project'))};
-		yaCounter25292768.reachGoal(name, params);
+		//yaCounter54256198.reachGoal(name, params);
 		return true;
 	});
 	$('body').on('click.reachgoal', '.jsReachGoal', function(){
 		var th = $(this),
 			name = th.data('reachgoal'),
 			params = th.data('params');
-		yaCounter25292768.reachGoal(name, params);
+		
+		$('textarea[name="msg"]',$('#formOrder')).val('');
+		$('textarea[name="msg"]',$('#formOrder')).val('Select a PIAR service');
+		
+		//yaCounter54256198.reachGoal(name, params);
 		return true;
 	});
 	$('body').on('click', 'a[href^="tel:"]', function(){
 		var href = $(this).attr('href');
 		href = href.split('tel:').join('');
-		yaCounter25292768.reachGoal('rgCommonPhone', {href: href});
+		//yaCounter54256198.reachGoal('rgCommonPhone', {href: href});
 		return true;
 	});
 	$('body').on('click', 'a[href^="mailto:"]', function(){
 		var href = $(this).attr('href');
 		href = href.split('mailto:').join('');
-		yaCounter25292768.reachGoal('rgCommonEmail', {href: href});
+		//yaCounter54256198.reachGoal('rgCommonEmail', {href: href});
 		return true;
 	});
 	$('body').on('submit', '.jsReachGoalForm', function(){
 		var th = $(this),
 			name = th.data('reachgoal'),
 			params = th.data('params');
-		yaCounter25292768.reachGoal(name, params);
+		//yaCounter54256198.reachGoal(name, params);
 		return true;
 	});
 	$(window).on('scroll',function(e){
@@ -94,8 +98,8 @@ function bindYaReachGoal(){
 				var name = th.data('reachgoal'),
 					params = th.data('params');
 				th.removeClass('jsReachGoalScroll');
-				if (typeof yaCounter25292768 != 'undefined')
-					yaCounter25292768.reachGoal(name, params);
+				/*if (typeof yaCounter54256198 != 'undefined')
+					yaCounter54256198.reachGoal(name, params);*/
 			}
 		})
 	});
