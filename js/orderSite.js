@@ -15,10 +15,6 @@ function bindOrderSite(){
 	if(!frm.size())
 		return false;
 	
-	var fromSrv = $('input[type="text"]',frm).val();
-	console.log('click form:',fromSrv);
-	$('textarea[name="msg"]',frm).val(fromSrv);
-	
 	var func={};
 	/* + Работа со слайдером */
 	var max=Math.floor(Math.random() * (100000 - 100 + 1)) + 100;
@@ -184,9 +180,6 @@ function bindOrderSite(){
 		/* -- Реальный сабмит формы */
 		/* ++ Отправка данных в хендлер */
 		func.hand=function(obj){
-
-			var fromSrv = $('input[type="text"]',frm).val();
-			console.log('click form2:',fromSrv);
 			
 			// Отпрака посредством сервиса через класс MailTo
 			var name = obj.name;
