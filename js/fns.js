@@ -64,7 +64,7 @@ function bindYaReachGoal(){
 			params = th.data('params');
 		
 		$('textarea[name="msg"]',$('#formOrder')).val('');
-		$('textarea[name="msg"]',$('#formOrder')).val(params.text + '<br> Сообщение: ');
+		$('textarea[name="msg"]',$('#formOrder')).val(params.text + '\n Сообщение: ');
 		
 		//yaCounter54256198.reachGoal(name, params);
 		return true;
