@@ -64,8 +64,7 @@ function bindYaReachGoal(){
 			params = th.data('params');
 		
 		$('textarea[name="msg"]',$('#formOrder')).val('');
-		$('textarea[name="msg"]',$('#formOrder')).val('Select a PIAR service');
-		console.log('DATA:',name,"/",params.text);
+		$('textarea[name="msg"]',$('#formOrder')).val(params.text + '<br> Сообщение: ');
 		
 		//yaCounter54256198.reachGoal(name, params);
 		return true;
