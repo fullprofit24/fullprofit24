@@ -16,6 +16,7 @@ function bindOrderSite(){
 		return false;
 	
 	var fromSrv = $('input[type="text"]',frm).val();
+	console.log('click form:',fromSrv);
 	$('textarea[name="msg"]',frm).val(fromSrv);
 	
 	var func={};
