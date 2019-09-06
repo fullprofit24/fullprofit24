@@ -65,6 +65,7 @@ function bindYaReachGoal(){
 		
 		$('textarea[name="msg"]',$('#formOrder')).val('');
 		$('textarea[name="msg"]',$('#formOrder')).val('Select a PIAR service');
+		console.log('DATA:',name,"/",params);
 		
 		//yaCounter54256198.reachGoal(name, params);
 		return true;
