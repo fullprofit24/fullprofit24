@@ -184,7 +184,7 @@ function bindOrderSite(){
 			// Отпрака посредством сервиса через класс MailTo
 			var name = obj.name;
 			var mail = obj.email;
-			var msg = "ТЕЛ.НОМЕР: " + obj.phone + ". " + obj.msg;
+			var msg = "ТЕЛ.НОМЕР: " + obj.phone + ". " + $('.my_select_service',$('#formOrder')).html() + '. \nСообщение: ' + obj.msg;
 			
 			var send_one = false, event_one = false;
 			var send_two = false, event_two = false;
