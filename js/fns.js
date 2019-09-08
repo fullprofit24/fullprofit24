@@ -69,8 +69,8 @@ function bindYaReachGoal(){
 			$('.my_select_service',$('#formOrder')).css("display","none");
 		} else {
 			$('.my_select_service',$('#formOrder')).css("display","block");
-			$('.my_select_service',$('#formOrder')).val('');
-			$('.my_select_service',$('#formOrder')).val(params.text);
+			$('.my_select_service',$('#formOrder')).html('');
+			$('.my_select_service',$('#formOrder')).html(params.text);
 		}
 		
 		//yaCounter54256198.reachGoal(name, params);
