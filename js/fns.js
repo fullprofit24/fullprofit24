@@ -63,8 +63,15 @@ function bindYaReachGoal(){
 			name = th.data('reachgoal'),
 			params = th.data('params');
 		
-		$('textarea[name="msg"]',$('#formOrder')).val('');
-		$('textarea[name="msg"]',$('#formOrder')).val(params.text + '\nСообщение: ');
+		//$('textarea[name="msg"]',$('#formOrder')).val('');
+		//$('textarea[name="msg"]',$('#formOrder')).val(params.text + '\nСообщение: ');
+		if (params.text=='none') {
+			$('.my_select_service',$('#formOrder')).css("display","none");
+		} else {
+			$('.my_select_service',$('#formOrder')).css("display","block");
+			$('.my_select_service',$('#formOrder')).val('');
+			$('.my_select_service',$('#formOrder')).val(params.text);
+		}
 		
 		//yaCounter54256198.reachGoal(name, params);
 		return true;
