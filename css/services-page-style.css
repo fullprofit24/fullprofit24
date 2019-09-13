@@ -469,10 +469,10 @@ html {
 }
 @keyframes twinkle2 {
   0%, 50%, 100% {
-    transform: scale(0.028);
+    transform: scale(0.28);
   }
   25%, 75% {
-    transform: scale(0.030);
+    transform: scale(0.30);
   }
 }
 @keyframes twinkle3 {
