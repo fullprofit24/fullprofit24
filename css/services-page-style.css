@@ -311,7 +311,6 @@ html {
 
 .icon-wordpress {
   animation-play-state: running;
-  width: 80%;
 }
 .icon-wordpress .graph {
   animation: bounce 1.4s ease-in-out infinite;
