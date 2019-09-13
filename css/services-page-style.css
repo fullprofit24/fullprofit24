@@ -469,12 +469,12 @@ html {
 }
 @keyframes twinkle2 {
   0%, 50%, 100% {
-    translate(-500.500000,0.000000);
-    transform: scale(0.88);
+
+    transform: scale(0.01);
   }
   25%, 75% {
-    translate(-500.500000,0.000000);
-    transform: scale(0.98);
+
+    transform: scale(0.01075);
   }
 }
 @keyframes twinkle3 {
