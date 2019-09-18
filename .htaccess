@@ -9,5 +9,5 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 
-RewriteRule ^index-mobile\.html$ / [R=301,L]
-RewriteRule ^(.*)/index-mobile\.html$ /$1/ [R=301,L]
+RewriteRule ^mobile\.html$ / [R=301,L]
+RewriteRule ^(.*)/mobile\.html$ /$1/ [R=301,L]
