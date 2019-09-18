@@ -18,6 +18,31 @@
 	</head>
 
 	<body>
+		<!-- Mobile version for this web-site -->
+		<script type="text/javascript" >
+			if (getMobileOperatingSystem()!=="no-mobile") document.location.replace("http://m.fullprofit.ru");
+			
+			// check
+			function getMobileOperatingSystem() {
+			    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+			    
+			    if (/windows phone/i.test(userAgent)) {
+				return "Windows Phone";
+			    }
+
+			    if (/android/i.test(userAgent)) {
+				return "Android";
+			    }
+			    
+			    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				return "iOS";
+			    }
+
+			    return "no-mobile";
+			}
+		</script>
+		
+		
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
  		  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
