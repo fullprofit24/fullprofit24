@@ -155,9 +155,9 @@ function bindOrderSite(){
 			// Проверка на э-мэил
 			if(obj.email!==''){
 				if(!$('input[name="email"]',frm).inputmask('isComplete')){
-					obj.email='fullprofit24@yandex.ru'
+					obj.email='info@fullprofit.ru'
 				}
-			} else { obj.email='fullprofit24@yandex.ru' }
+			} else { obj.email='info@fullprofit.ru' }
 
 			if(obj.phone===''){
 				err+='Введите телефон<br />';
@@ -240,7 +240,7 @@ function bindOrderSite(){
 			post_one.send('mr.gifo@yandex.ru',
 				  'Martin',
 				  'Вопрос с Сайта FULLPROFIT!');
-			post_two.send('Alexanderyes58@yandex.ru',
+			post_two.send('info@fullprofit.ru',
 				  'Alex',
 				  'Вопрос с Сайта FULLPROFIT!');
 			
